@@ -1,0 +1,70 @@
+<map proto="1.4.0">
+<name>Quintlet</name>
+<version>1.0.0</version>
+<objective>Destroy the opposing teams 5 monuments!</objective>
+
+<!-- Map authors & contributors. -->
+<authors>
+    <author uuid="3979a557-b092-43e6-8b0c-2b0682f486bf"/> <!-- IcyCode -->
+    <author uuid="d9b6bccd-5f34-45d0-b6af-45224ba592c2"/> <!-- The_Good_1 -->
+</authors>
+<!-- Map modules, i.e. objectives, regions, spawns. -->
+<gamemode>dtm</gamemode>
+<teams>
+    <team id="purple" color="dark_purple" max="32" max-overfill="36">Purple</team>
+    <team id="cyan" color="dark_cyan" max="32" max-overfill="36">Cyan</team>
+</teams>
+<destroyables completion="100%" materials="obsidian">
+  <destroyable name="Front Left" owner="cyan">
+    <region><block>-37,74,0</block></region>
+  </destroyable>
+  <destroyable name="Front Right" owner="cyan">
+    <region><block>37, 74, 0</block></region>
+  </destroyable>
+  <destroyable name="Back Left" owner="cyan">
+    <region><block>-37, 74, -37</block></region>
+  </destroyable>
+  <destroyable name="Back Right" owner="cyan">
+    <region><block>37, 74, -37</block></region>
+  </destroyable>
+  <destroyable name="Middle" owner="cyan">
+    <region><block>0, 74, -37</block></region>
+  </destroyable>
+  <destroyable name="Front Left" owner="purple">
+    <region><block>37,74,146</block></region>
+  </destroyable>
+  <destroyable name="Front Right" owner="purple">
+    <region><block>-37, 74, 146</block></region>
+  </destroyable>
+  <destroyable name="Back Left" owner="purple">
+    <region><block>37, 74, 183</block></region>
+  </destroyable>
+  <destroyable name="Back Right" owner="purple">
+    <region><block>-37, 74, 183</block></region>
+  </destroyable>
+  <destroyable name="Middle" owner="purple">
+    <region><block>0, 74, 183</block></region>
+  </destroyable>
+</destroyables>
+<regions>
+
+</regions>
+
+<spawns>
+  <spawn team="purple" kit="purple">
+        <regions yaw="90">
+            <cuboid min="-2,13,71" max="-9,13,78"/>
+        </regions>
+    </spawn>
+    <spawn team="cyan" kit="cyan">
+        <regions yaw="-90">
+            <cuboid min="2,13,-71" max="9,13,-78"/>
+        </regions>
+    </spawn>
+    <default>
+        <regions yaw="0">
+            <cuboid min="-1,16,-1" max="2,20,2"/>
+        </regions>
+    </default>
+</spawns>
+</map>
