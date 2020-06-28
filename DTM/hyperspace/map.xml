@@ -47,7 +47,6 @@
         <cylinder base="100.5,55,-47.5" radius="4" height="0"/>
     </default>
 </spawns>
-
 <destroyables name="Monument" materials="gold block" sparks="true" show-progress="true">
     <destroyable owner="green">
         <cuboid min="27,37,-76" max="24,45,-79"/>
