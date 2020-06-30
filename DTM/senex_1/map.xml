@@ -26,14 +26,12 @@
     </kit>
 </kits>
 <spawns>
-    <spawns kit="spawn">
-        <spawn team="lime" yaw="-90">
-            <cylinder base="35,20,-743" radius="2"/>
-        </spawn>
-        <spawn team="cyan" yaw="90">
-            <cylinder base="129, 20, -743" radius="2"/>
-        </spawn>
-    </spawns>
+    <spawn kit="spawn" team="lime" yaw="-90">
+        <cylinder base="35,20,-743" radius="2"/>
+    </spawn>
+    <spawn kit="spawn" team="cyan" yaw="90">
+        <cylinder base="129, 20, -743" radius="2"/>
+    </spawn>
     <default yaw="180">
         <cylinder base="82, 37, -809" radius="2"/>
     </default>
@@ -52,7 +50,6 @@
         <region><cuboid min="-12, 23, -755" max="-12, 24, -755"/></region>
     </destroyable>
 </destroyables>
-
 <itemremove>
     <item>arrow</item>
     <item>iron chestplate</item>
