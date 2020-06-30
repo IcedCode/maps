@@ -26,16 +26,16 @@
 </spawns>
 <destroyables materials="obsidian" completion="100%">
     <destroyable owner="cyan" name="Left">
-        <region><block id="Cyan Left">176, 23, -755</block></region>
+        <region><cuboid min="176, 23, -755" max="176, 24, -755"/></region>
     </destroyable>
     <destroyable owner="cyan" name="Right">
-        <region><block id="Cyan Right">176,23,-733</block></region>
+        <region><cuboid min="176, 23, -733" max="176, 24, -733"/></region>
     </destroyable>
     <destroyable owner="lime" name="Left">
-        <region><block id="Lime Left">-12, 23, -733</block></region>
+        <region><cuboid min="-12, 23, -733" max="176, 24, -755"/></region>
     </destroyable>
     <destroyable owner="lime" name="Right">
-        <region><block id="Lime Right">-12, 23, -755</block></region>
+        <region><cuboid min="-12, 23, -755" max="-12, 24, -755"/></region>
     </destroyable>
 </destroyables>
 <kits>
