@@ -4,7 +4,7 @@
 <version>1.0.0</version>
 <objective>Break the obsidian from the enemy team's monuments.</objective>
 <authors>
-    <author uuid="44df6b20168f4389b7ac434518207c2f">ParaPenguin</author>
+    <author uuid="44df6b20-168f-4389-b7ac-434518207c2f">ParaPenguin</author>
 </authors>
 <teams>
     <team id="lime" color="lime" max="20">Lime</team>
