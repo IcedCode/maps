@@ -12,7 +12,7 @@
 </teams>
 <maxbuildheight>50</maxbuildheight>
 <kits>
-    <kit name="spawn">
+    <kit id="spawn">
         <item slot="0" enchantment="durability:1">diamond axe</item>
         <item slot="1" enchantment="arrow infinite:1">bow</item>
         <item slot="2">diamond pickaxe</item>
