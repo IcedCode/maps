@@ -11,6 +11,20 @@
     <team id="cyan" color="dark_aqua" max="20">Cyan</team>
 </teams>
 <maxbuildheight>50</maxbuildheight>
+<kits>
+    <kit name="spawn">
+        <item slot="0" enchantment="durability:1">diamond axe</item>
+        <item slot="1" enchantment="arrow infinite:1">bow</item>
+        <item slot="2">diamond pickaxe</item>
+        <item slot="4" amount="64">log</item>
+        <item slot="5" amount="32">glass</item>
+        <item slot="7" amount="4">gold nugget</item>
+        <item slot="8" amount="32">cooked fish</item>
+        <item slot="28">arrow</item>
+        <chestplate enchantment="protection projectile:2">iron chestplate</chestplate>
+        <boots>iron boots</boots>
+    </kit>
+</kits>
 <spawns>
     <spawns kit="spawn">
         <spawn team="lime" yaw="-90">
@@ -38,20 +52,7 @@
         <region><cuboid min="-12, 23, -755" max="-12, 24, -755"/></region>
     </destroyable>
 </destroyables>
-<kits>
-    <kit name="spawn">
-        <item slot="0" enchantment="durability:1">diamond axe</item>
-        <item slot="1" enchantment="arrow infinite:1">bow</item>
-        <item slot="2">diamond pickaxe</item>
-        <item slot="4" amount="64">log</item>
-        <item slot="5" amount="32">glass</item>
-        <item slot="7" amount="4">gold nugget</item>
-        <item slot="8" amount="32">cooked fish</item>
-        <item slot="28">arrow</item>
-        <chestplate enchantment="protection projectile:2">iron chestplate</chestplate>
-        <boots>iron boots</boots>
-    </kit>
-</kits>
+
 <itemremove>
     <item>arrow</item>
     <item>iron chestplate</item>
