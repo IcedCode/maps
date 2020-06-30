@@ -24,7 +24,7 @@
         <cylinder base="82, 37, -809" radius="2"/>
     </default>
 </spawns>
-<destroyables name="Monument" materials="obsidian" completion="100%">
+<destroyables materials="obsidian" completion="100%">
     <destroyable owner="cyan" name="Left">
         <region><block id="Cyan Left">176, 23, -755</block></region>
     </destroyable>
