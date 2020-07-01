@@ -61,6 +61,17 @@
       <boots color="7FCC19" material="leather boots"/>
     </kit>
 </kits>
+<regions>
+  <negative id="outside-field">
+    <cuboid name="field" max="183, 0, -726" min="-19, 38, -762"/>
+  </negative>
+  <union id="spawn-area">
+    <cylinder name="lime-spawn" base="35, 19, -744" height="6" radius="8"/>
+    <cylinder name="cyan-spawn" base="129, 19, -744" height="6" radius="8"/>
+  </union>
+  <apply block="never" message="You may not destroy the spawn area!" region="spawn-area"/>
+  <apply block="never" message="You may not edit outside of the playing field!" region="outside-field"/>
+</regions>
 <itemremove>
     <item>arrow</item>
     <item>iron chestplate</item>
