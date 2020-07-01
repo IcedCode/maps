@@ -11,45 +11,56 @@
     <team id="cyan" color="dark_aqua" max="20">Cyan</team>
 </teams>
 <maxbuildheight>50</maxbuildheight>
-<kits>
-    <kit id="spawn">
-        <item slot="0" enchantment="durability:1">diamond axe</item>
-        <item slot="1" enchantment="arrow infinite:1">bow</item>
-        <item slot="2">diamond pickaxe</item>
-        <item slot="4" amount="64">log</item>
-        <item slot="5" amount="32">glass</item>
-        <item slot="7" amount="4">gold nugget</item>
-        <item slot="8" amount="32">cooked fish</item>
-        <item slot="28">arrow</item>
-        <chestplate enchantment="protection projectile:2">iron chestplate</chestplate>
-        <boots>iron boots</boots>
-    </kit>
-</kits>
 <spawns>
-    <spawn kit="spawn" team="lime" yaw="-90">
-        <cylinder base="35,20,-743" radius="2"/>
+    <spawn kit="limekit" team="lime" yaw="-90">
+        <region><cylinder base="35,20,-743" height="1" radius="2"/></region>
     </spawn>
-    <spawn kit="spawn" team="cyan" yaw="90">
-        <cylinder base="129, 20, -743" radius="2"/>
+    <spawn kit="cyankit" team="cyan" yaw="90">
+        <region><cylinder base="129, 20, -743" height="1" radius="2"/></region>
     </spawn>
     <default yaw="180">
-        <cylinder base="82, 37, -809" radius="2"/>
+        <region><cylinder base="82, 37, -809" height="1" radius="2"/></region>
     </default>
 </spawns>
 <destroyables materials="obsidian" completion="100%">
     <destroyable owner="cyan" name="Left">
-        <region><cuboid min="176, 23, -755" max="176, 24, -755"/></region>
+        <region><block>176, 23, -755</block></region>
     </destroyable>
     <destroyable owner="cyan" name="Right">
-        <region><cuboid min="176, 23, -733" max="176, 24, -733"/></region>
+        <region><block>176, 23, -733</block></region>
     </destroyable>
     <destroyable owner="lime" name="Left">
-        <region><cuboid min="-12, 23, -733" max="176, 24, -755"/></region>
+        <region><block>-12, 23, -733</block></region>
     </destroyable>
     <destroyable owner="lime" name="Right">
-        <region><cuboid min="-12, 23, -755" max="-12, 24, -755"/></region>
+        <region><block>-12, 23, -755</block></region>
     </destroyable>
 </destroyables>
+<kits>
+    <kit id="spawn" force="true">
+        <item slot="0">stone sword</item>
+        <item slot="1" enchantment="arrow infinite:1">bow</item>
+        <item slot="2">diamond pickaxe</item>
+        <item slot="3" amount="2">golden apple</item>
+        <item slot="4" amount="32">cooked beef</item>
+        <item slot="5" amount="32">glass</item>
+        <item slot="6" amount="64">sandstone</item>
+        <item slot="7" amount="64">log</item>
+        <item slot="28" amount="64">arrow</item>
+    </kit>
+    <kit id="cyankit" parent="spawn">
+      <helmet color="4C7F99" material="leather helmet"/>
+      <chestplate color="4C7F99" material="leather chestplate"/>
+      <leggings color="4C7F99" material="leather leggings"/>
+      <boots color="4C7F99" material="leather boots"/>
+    </kit>
+    <kit id="limekit" parent="spawn">
+      <helmet color="4C7F99" material="leather helmet"/>
+      <chestplate color="7FCC19" material="leather chestplate"/>
+      <leggings color="7FCC19" material="leather leggings"/>
+      <boots color="7FCC19" material="leather boots"/>
+    </kit>
+</kits>
 <itemremove>
     <item>arrow</item>
     <item>iron chestplate</item>
