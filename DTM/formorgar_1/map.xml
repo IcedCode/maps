@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<map proto="1.4.0">
+<name>Formorgar 1</name>
+<version>1.1.0</version>
+<objective>Break the obsidian from the enemy team's monuments.</objective>
+<authors>
+    <author uuid="da98a2f1-673c-4cec-b547-e0a342abfde4">Evocal</author>
+</authors>
+<maxbuildheight>110</maxbuildheight>
+<teams>
+    <team id="purple" color="LIGHT_PURPLE" max="25">Purple</team>
+    <team id="yellow" color="yellow" max="25">Yellow</team>
+</teams>
+<spawns>
+    <spawn kit="purplekit" team="purple" yaw="180">
+        <region><cylinder base="-0, 66, 5" height="1" radius="2"/></region>
+    </spawn>
+    <spawn kit="yellowkit" team="yellow" yaw="0">
+        <region><cylinder base="-0, 66, -130" height="1" radius="2"/></region>
+    </spawn>
+    <default yaw="-90">
+        <region><cylinder base="-39, 86, -62" height="1" radius="2"/></region>
+    </default>
+</spawns>
+<destroyables materials="obsidian" completion="100%">
+    <destroyable owner="purple" name="Left">
+        <region><block>18, 67, 5</block></region>
+    </destroyable>
+    <destroyable owner="purple" name="Right">
+        <region><block>-20, 67, 5</block></region>
+    </destroyable>
+    <destroyable owner="yellow" name="Left">
+        <region><block>-20, 67, -131</block></region>
+    </destroyable>
+    <destroyable owner="yellow" name="Right">
+        <region><block>18, 67, -131</block></region>
+    </destroyable>
+</destroyables>
+<kits>
+    <kit id="spawn" force="true">
+        <item slot="0">iron sword</item>
+        <item slot="1" enchantment="arrow infinite:1">bow</item>
+        <item slot="2">diamond pickaxe</item>
+        <item slot="3" amount="2">golden apple</item>
+        <item slot="4" amount="32">cooked beef</item>
+        <item slot="5" amount="32">glass</item>
+        <item slot="6" amount="64">log</item>
+        <item slot="7" amount="4">exp bottle</item>
+        <item slot="10" amount="1">lapis block</item>
+        <item slot="28" amount="64">arrow</item>
+    </kit>
+    <kit id="purplekit" parent="spawn">
+      <helmet color="7F3FB2" material="leather helmet"/>
+      <chestplate color="7F3FB2" material="leather chestplate"/>
+      <leggings material="iron leggings"/>
+      <boots color="7F3FB2" material="leather boots"/>
+    </kit>
+    <kit id="yellowkit" parent="spawn">
+      <helmet color="E5E533" material="leather helmet"/>
+      <chestplate color="E5E533" material="leather chestplate"/>
+      <leggings material="iron leggings"/>
+      <boots color="E5E533" material="leather boots"/>
+    </kit>
+</kits>
+<regions>
+  <union id="spawn-area">
+    <sphere origin="-0, 65, -130" radius="8"/>
+    <sphere origin="-0, 65, 5" radius="8"/>
+    <cuboid max="-1, 69, -97" min="-1, 68, -97"/>
+    <cuboid max="-1, 69, -29" min="-1, 68, -29"/>
+  </union>
+  <apply block="never" message="You may not build in this area!" region="spawn-area"/>
+</regions>
+<itemremove>
+  <item>leather helmet</item>
+  <item>leather chestplate</item>
+  <item>leather boots</item>
+  <item>iron leggings</item>
+  <item>glass</item>
+  <item>arrow</item>
+  <item>log</item>
+  <item>cooked beef</item>
+  <item>iron sword</item>
+  <item>bow</item>
+  <item>diamond pickaxe</item>
+</itemremove>
+</map>
