@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<map proto="1.4.0">
+<name>Illegal Office</name>
+<version>1.1.0</version>
+<objective>Either be the first team to reach 100 kills or be the team with the most kills after 8 minutes.</objective>
+<!-- Map authors & contributors. -->
+<authors>
+  <author uuid="da98a2f1-673c-4cec-b547-e0a342abfde4">Evocal</author>
+</authors>
+<!-- Map modules, i.e. objectives, regions, spawns. -->
+<score>
+    <kills>1</kills>    <!-- +1 points for a kill -->
+    <deaths>1</deaths>  <!-- -1 points for dying -->
+    <limit>100</limit>
+</score>
+<time result="objectives">8m</time>
+<teams>
+    <team id="red-team" color="dark red" max="25" max-overfill="30">Red</team>
+    <team id="blue-team" color="blue" max="25" max-overfill="30">Blue</team>
+</teams>
+<spawns>
+    <spawn team="red-team" kit="red">
+        <regions yaw="90">
+            <block>22, 51, -75</block>
+        </regions>
+    </spawn>
+    <spawn team="blue-team" kit="blue">
+        <regions yaw="-90">
+            <block>-42, 51, 47</block>
+        </regions>
+    </spawn>
+    <default>
+        <regions yaw="0">
+            <block>-54, 85, -13</block>
+        </regions>
+    </default>
+</spawns>
+<kits>
+    <kit id="spawn" force="true">
+      <item material="iron sword" slot="0"/>
+      <item material="bow" slot="1"/>
+      <item material="diamond pickaxe" slot="2"/>
+      <item amount="2" material="golden apple" slot="3"/>
+      <item amount="64" color="red" material="wool" slot="4"/>
+      <item amount="64" color="blue" material="wool" slot="5"/>
+      <item amount="16" material="pumpkin pie" slot="6"/>
+      <item material="stick" slot="27"/>
+      <item amount="64" material="arrow" slot="28"/>
+    </kit>
+    <kit id="red" parents="spawn">
+        <helmet color="cd0000" material="leather helmet"/>
+        <chestplate color="cd0000" material="leather chestplate"/>
+        <leggings color="cd0000" material="leather leggings"/>
+        <boots color="cd0000" material="leather boots"/>
+    </kit>
+    <kit id="blue" parents="spawn">
+        <helmet color="0066cc" material="leather helmet"/>
+        <chestplate color="0066cc" material="leather chestplate"/>
+        <leggings color="0066cc" material="leather leggings"/>
+        <boots color="0066cc" material="leather boots"/>
+    </kit>
+</kits>
+<regions>
+  <negative id="outside-field">
+    <cuboid name="field" max="31, 46, -85" min="-52, 84, 56"/>
+  </negative>
+  <union id="spawn-area">
+    <cuboid max="-46, 45, 50" min="-28, 56, 36"/>
+    <cuboid max="-28, 55, 35" min="-43, 51, 32"/>
+    <cuboid max="7, 56, -65" min="25, 45, -79"/>
+    <cuboid max="7, 55, -64" min="22, 51, -61"/>
+  </union>
+  <apply block="never" message="You may not destroy the spawn area!" region="spawn-area"/>
+  <apply block="never" message="You may not edit outside of the playing field!" region="outside-field"/>
+</regions>
+<itemremove>
+  <item>leather helmet</item>
+  <item>leather chestplate</item>
+  <item>leather leggings</item>
+  <item>leather boots</item>
+  <item>pumpkin pie</item>
+  <item>arrow</item>
+  <item>iron sword</item>
+  <item>bow</item>
+  <item>diamond pickaxe</item>
+  <item>stick</item>
+  <item>wool</item>
+</itemremove>
+</map>

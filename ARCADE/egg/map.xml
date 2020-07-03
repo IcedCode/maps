@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<map proto="1.4.0">
+<name>Egg</name>
+<version>1.0.0</version>
+<objective>Evade the egger! Survive for 1 minute</objective>
+<!-- Map authors & contributors. -->
+<!-- Major map authors. -->
+<authors>
+    <author uuid="060e9bf1-1c08-456c-b660-a8cd12138ea2"/> <!-- ahilton11 -->
+    <author uuid="3979a557-b092-43e6-8b0c-2b0682f486bf"/> <!-- Elliott_ -->
+</authors>
+<!-- Map modules, i.e. objectives, regions, spawns. -->
+<teams>
+  <team id="runners" color="gold" max="50" max-overfill="14">Runners</team>
+  <team id="eggers" color="red" max="50" max-overfill="2">Eggers</team>
+</team>
+<blitz>
+    <lives>1</lives>
+    <broadcastLives>false</broadcastLives>
+</blitz>
+<time>1m</time>
+<include src="blitz-global.xml"/>
+</map>
