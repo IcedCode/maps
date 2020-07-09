@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<map proto="1.4.0">
+<name>Halcyon I</name>
+<version>1.0.0</version>
+<objective>Break the obsidian from the enemy team's monuments.</objective>
+<authors>
+    <author uuid="8242e55e-cc6a-458a-b272-a2b34918045f">funkystudios</author>
+</authors>
+<teams>
+    <team id="purple" color="dark purple" max="18">Purple</team>
+    <team id="red" color="dark red" max="18">Red</team>
+</teams>
+<spawns>
+    <spawn kit="purplekit" team="purple" yaw="0">
+        <region><cylinder base="14, 75, -871" height="1" radius="2"/></region>
+    </spawn>
+    <spawn kit="redkit" team="red" yaw="-180">
+        <region><cylinder base="14, 75, -761" height="1" radius="2"/></region>
+    </spawn>
+    <default yaw="-90">
+        <region><cylinder base="-34, 85, -816" height="1" radius="2"/></region>
+    </default>
+</spawns>
+<destroyables materials="obsidian" completion="100%">
+    <destroyable owner="purple" name="Left">
+        <region><block>-13, 74, -861</block></region>
+    </destroyable>
+    <destroyable owner="purple" name="Right">
+        <region><block>41, 74, -861</block></region>
+    </destroyable>
+    <destroyable owner="red" name="Left">
+        <region><block>41, 74, -773</block></region>
+    </destroyable>
+    <destroyable owner="red" name="Right">
+        <region><block>-13, 74, -773</block></region>
+    </destroyable>
+</destroyables>
+<kits>
+    <kit id="spawn" force="true">
+        <item slot="0">stone sword</item>
+        <item slot="1" enchantment="arrow infinite:1">bow</item>
+        <item slot="2" enchantment="dig speed:1">diamond pickaxe</item>
+        <item slot="3" amount="1">golden apple</item>
+        <item slot="4" amount="32">cooked beef</item>
+        <item slot="5" amount="32">glass</item>
+        <item slot="6" amount="64">log</item>
+        <item slot="28" amount="32">arrow</item>
+    </kit>
+    <kit id="purplekit" parent="spawn">
+      <helmet color="7F3FB2" material="leather helmet"/>
+      <chestplate color="7F3FB2" material="leather chestplate"/>
+      <leggings material="iron leggings"/>
+      <boots color="7F3FB2" material="leather boots"/>
+    </kit>
+    <kit id="redkit" parent="spawn">
+      <helmet color="993333" material="leather helmet"/>
+      <chestplate color="993333" material="leather chestplate"/>
+      <leggings material="iron leggings"/>
+      <boots color="993333" material="leather boots"/>
+    </kit>
+</kits>
+<regions>
+  <negative id="outside-field">
+    <cuboid max="-19, 64, -741" min="49, 89, -892"/>
+  </negative>
+  <union id="spawn-area">
+    <cylinder base="14, 70, -762" height="12" radius="8"/>
+    <cylinder base="14, 70, -872" height="12" radius="8"/>
+  </union>
+  <apply block="never" message="You may not modify the spawn area!" region="spawn-area"/>
+  <apply block="never" message="You may not edit outside of the playing field!" region="outside-field"/>
+</regions>
+<itemremove>
+    <item>glass</item>
+    <item>wood</item>
+    <item>log</item>
+    <item>cooked fish</item>
+    <item>obsidian</item>
+    <item>redstone block</item>
+</itemremove>
+</map>
