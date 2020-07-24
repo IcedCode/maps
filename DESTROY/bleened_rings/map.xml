@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<map proto="1.4.0">
+<name>Bleened Rings</name>
+<version>1.1.0</version>
+<objective>Break the obsidian from the enemy team's monuments.</objective>
+<authors>
+  <author uuid="0c20aa0d-82f9-46cd-aeae-29cf1f112aa2"/> <!-- resepignev -->
+  <author uuid="14c22263-a1b7-4143-9c12-941b586e3a50"/> <!-- GrapeSmoothie -->
+  <author uuid="c29bef37-d8e2-42a9-b746-04f2df78f374"/> <!-- Legoche -->
+</authors>
+<teams>
+    <team id="green" color="green" max="28">Green</team>
+    <team id="blue" color="dark_aqua" max="28">Blue</team>
+</teams>
+<maxbuildheight>50</maxbuildheight>
+<spawns>
+    <spawn kit="greenkit" team="green" yaw="-90">
+        <region><cylinder base="0, 5, -107" height="1" radius="2"/></region>
+    </spawn>
+    <spawn kit="bluekit" team="blue" yaw="-180">
+        <region><cylinder base="0 ,5, 25" height="1" radius="2"/></region>
+    </spawn>
+    <default yaw="180">
+        <region><cylinder base="-100, 55, -37" height="1" radius="2"/></region>
+    </default>
+</spawns>
+<destroyables materials="obsidian" completion="100%">
+    <destroyable owner="blue" name="Left">
+        <region><block>69, 12, 0</block></region>
+    </destroyable>
+    <destroyable owner="blue" name="Right">
+        <region><block>-69, 12, 0</block></region>
+    </destroyable>
+    <destroyable owner="green" name="Left">
+        <region><block>-69, 12, -84</block></region>
+    </destroyable>
+    <destroyable owner="green" name="Right">
+        <region><block>69, 12, -84</block></region>
+    </destroyable>
+</destroyables>
+<kits>
+    <kit id="spawn" force="true">
+        <item slot="0">stone sword</item>
+        <item slot="1" enchantment="arrow infinite:1">bow</item>
+        <item slot="2" enchantment="dig speed:1">diamond pickaxe</item>
+        <item slot="3" amount="3">golden apple</item>
+        <item slot="4" amount="32">cooked beef</item>
+        <item slot="5" amount="32">glass</item>
+        <item slot="6" amount="64">log</item>
+        <item slot="28" amount="1">arrow</item>
+    </kit>
+    <kit id="bluekit" parent="spawn">
+      <helmet color="4C7F99" material="leather helmet"/>
+      <boots color="4C7F99" material="leather boots"/>
+    </kit>
+    <kit id="greenkit" parent="spawn">
+      <helmet color="7FCC19" material="leather helmet"/>
+      <boots color="7FCC19" material="leather boots"/>
+    </kit>
+</kits>
+<regions>
+  <union id="spawn-area">
+    <cuboid max="-3, 3, -100" min="3, 11, -117"/>
+    <cuboid max="3 ,4, 15" min="-3, 11, 33"/>
+    <cuboid max="3, 4, 15" min="-3, 14, 12"/>
+    <cuboid max="3, 4, 34" min="-3, 14, 37"/>
+    <cuboid max="3, 4, -99" min="-3, 14, -96"/>
+    <cuboid max="-3, 4, -121" min="3, 14, -118"/>
+    <cylinder base="14, 70, -762" height="12" radius="8"/>
+    <cylinder base="14, 70, -872" height="12" radius="8"/>
+  </union>
+  <union id="points">
+    <block>0, 8, -149</block>
+    <block>0, 8, 65</block>
+  </union>
+  <apply block="never" message="You may not modify the spawn area!" region="spawn-area"/>
+</regions>
+<itemremove>
+    <item>arrow</item>
+    <item>stone sword</item>
+    <item>leather helmet</item>
+    <item>leather chestplate</item>
+    <item>leather leggings</item>
+    <item>leather boots</item>
+    <item>glass</item>
+    <item>wood</item>
+    <item>log</item>
+    <item>cooked beef</item>
+    <item>obsidian</item>
+</itemremove>
+</map>
