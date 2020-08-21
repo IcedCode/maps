@@ -99,10 +99,10 @@
 </kits>
 <filters>
     <filter name="only-blue">
-        <team>blue</team>
+        <team>Blue</team>
     </filter>
     <filter name="only-red">
-        <team>red</team>
+        <team>Red</team>
     </filter>
     <filter name="no-void">
         <deny>
