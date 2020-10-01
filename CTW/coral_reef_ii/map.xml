@@ -22,9 +22,10 @@
         <item slot="1" enchantment="arrow infinite">bow</item>
         <item slot="2" enchantment="durability:4;dig speed:1">iron pickaxe</item>
         <item slot="3" enchantment="durability:4">iron axe</item>
-        <item slot="5" amount="64" damage="2">wood</item>
-        <item slot="7" amount="1">golden apple</item>
-        <item slot="8" amount="32" damage="1">cooked fish</item>
+        <item slot="4" amount="1">golden apple</item>
+        <item slot="5" amount="32" damage="1">cooked fish</item>
+        <item slot="6" amount="64" damage="2">wood</item>
+        <item slot="7" amount="64">sandstone</item>
         <item slot="28" amount="1">arrow</item>
         <effect duration="11" amplifier="5">resistance</effect>
     </kit>
@@ -48,20 +49,6 @@
 </spawns>
 <time result="objectives">45m</time>
 <block-drops>
-    <rule>
-        <region>
-            <everywhere/>
-        </region>
-        <filter>
-            <any>
-                <material>sponge</material>
-            </any>
-        </filter>
-        <drops>
-            <item amount="8" material="golden apple"/>
-            <item amount="1" material="iron leggings"/>
-        </drops>
-    </rule>
     <rule>
         <region>
             <everywhere/>
