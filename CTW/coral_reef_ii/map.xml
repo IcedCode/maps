@@ -81,6 +81,8 @@
         <cuboid id="blue-base" min="-485,30,183" max="-462,0,159"/>
         <cuboid id="red-base" min="-250,30,159" max="-273,0,183"/>
     </union>
+    <cuboid id="spawner-gaps" min="-368,14,170" max="-367,15,172"/>
+    <cuboid id="spawner" min="-369,13,169" max="-366,17,173"/>
     <!-- Red must enter -->
     <union id="red-wools">
         <rectangle id="green-wool" min="-452,212" max="-438,198"/>
@@ -155,6 +157,11 @@
         </monument>
     </wool>
 </wools>
+<spawners>
+  <spawner id="gapple-spawner" spawn-region="spawner-gaps" player-region="spawner" min-delay="20s" max-delay="25s">
+    <item amount="1" material="golden apple"/>
+  </spawner>
+</spawners>
 <maxbuildheight>30</maxbuildheight>
 <itemremove>
     <item>cooked fish</item>
