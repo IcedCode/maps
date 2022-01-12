@@ -41,7 +41,7 @@
     <item slot="0" unbreakable="true" material="bow"/>
   </kit>
   <kit id="ball-kit">
-  </clear>
+    
   </kit>
   <!--Regional Kits-->
   <kit id="ball-effects">
