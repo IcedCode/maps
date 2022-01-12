@@ -41,7 +41,7 @@
     <item slot="0" unbreakable="true" material="bow"/>
   </kit>
   <kit id="ball-kit">
-    
+    <item slot="0" material="cooked beef"/>
   </kit>
   <!--Regional Kits-->
   <kit id="ball-effects">
