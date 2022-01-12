@@ -24,7 +24,9 @@
 <teams>
     <team id="batsmen" color="green" max="8">Batsmen</team>
     <team id="fielders" color="dark aqua" max="8">Fielders</team>
-    <team id="ball" color="gray" max="1">Ball</team>
+    <team id="ball" show-name-tags="false" color="gray" max="1">Ball</team>
+    <team id="referee" color="black" max="1">Ref</team>
+
 </teams>
 <kits>
   <kit id="parent-kit">
@@ -39,25 +41,27 @@
       <enchantment level="6">knockback</enchantment> </item>
   </kit>
   <kit id="fielders-kit" parent="parent-kit">
-    <item slot="0" unbreakable="true" material="bow"/>
+    <item slot="0" unbreakable="true" material="bow">
+    <enchantment level="10">sharpness</enchantment> </item>
+
   </kit>
   <kit id="ball-kit">
-    <item slot="0" material="cooked beef"/>
+    <item slot="8" material="arrow"/>
     <game-mode>survival</game-mode>
   </kit>
   <!--Regional Kits-->
   <kit id="ball-effects">
-    <effect amplifier="-4">health boost</effect>
+    <effect amplifier="-4.5">health boost</effect>
     <effect amplifier="10" duration="5">damage resistance</effect>
-    <effect duration="3">invisibility</effect>
+    <effect duration="1">invisibility</effect>
     <effect amplifier="50" duration="5">slow_digging</effect>
-    <item slot="8" material="arrow"/>
   </kit>
   <kit id="batsmen-effects">
     <effect amplifier="10" duration="2">damage resistance</effect>
-    <effect duration="3">blindness</effect>
+    <effect duration="4">blindness</effect>
     <effect amplifier="5" duration="6">nausea</effect>
     <effect amplifier="50" duration="4">slow_digging</effect>
+    <game-mode>adventure</game-mode>
   </kit>
   <kit id="death-kit" force="true">
        <effect amplifier="255">wither</effect>
@@ -93,7 +97,7 @@
 <regions>
 
   <rectangle id="pitch" min="-2.5,16.5" max="3.5,-3.5"/>
-  <cuboid id="cloud-portal" min="0.5,2,-3.5" max="0.5,4,-3.5"/>
+  <cuboid id="cloud-portal" min="0.5,2,-4.5" max="0.5,4,-4.5"/>
   <cuboid id="wicket" min="2.5,0,.5" max="-1.5,5,-1.5"/>
 
   <complement>
@@ -107,6 +111,7 @@
   <apply kit="ball-effects" region="ball-region"/>
   <apply kit="batsmen-effects" region="batsmen-region"/>
   <apply block-break="only-tnt" region="wicket"/>
+
 </regions>
 <!--portals-->
 <portals>
@@ -122,5 +127,6 @@
     <item>leather boots</item>
   <item>bow</item>
   <item>stick</item>
+
 </itemremove>
 </map>
