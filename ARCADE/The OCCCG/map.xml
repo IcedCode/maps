@@ -32,20 +32,22 @@
     <chestplate unbreakable="true" team-color="true" material="leather chestplate"/>
     <leggings unbreakable="true" team-color="true" material="leather leggings"/>
     <boots unbreakable="true" team-color="true" material="leather boots"/>
+    <game-mode>adventure</game-mode>
   </kit>
   <kit id="batsmen-kit" parent="parent-kit">
     <item slot="0" material="stick" name="`2`lCricket Bat">
-      <enchantment level="5">knockback</enchantment> </item>
+      <enchantment level="6">knockback</enchantment> </item>
   </kit>
   <kit id="fielders-kit" parent="parent-kit">
     <item slot="0" unbreakable="true" material="bow"/>
   </kit>
   <kit id="ball-kit">
     <item slot="0" material="cooked beef"/>
+    <game-mode>survival</game-mode>
   </kit>
   <!--Regional Kits-->
   <kit id="ball-effects">
-    <health>1</health>
+    <effect amplifier="-4">health boost</effect>
     <effect amplifier="10" duration="3">damage resistance</effect>
     <effect duration="2">invisibility</effect>
     <effect amplifier="10" duration="4">slow_digging</effect>
@@ -105,7 +107,6 @@
   <apply kit="ball-effects" region="ball-region"/>
   <apply kit="batsmen-effects" region="batsmen-region"/>
   <apply block-break="only-tnt" region="wicket"/>
-  <apply block-break="never"/>
 </regions>
 <!--portals-->
 <portals>
