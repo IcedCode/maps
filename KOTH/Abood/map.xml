@@ -61,7 +61,7 @@
     <cuboid id="cave" min="-25.5,10,3.5" max="-19.5,12,-2.5"/>
     <!-- <cuboid id="cave-captured" min="-18,36,-34" max="-11,54,-21"/> -->
     <cuboid id="top" min="-25.5,23,3.5" max="-19.5,25,-2.5"/>
-    <cuboid id="middle" max="12.5,21,3.5" max="18.5,23,-2.5"/>
+    <cuboid id="middle" min="12.5,21,3.5" max="18.5,23,-2.5"/>
     <apply block="never"/>
 </regions>
 <king>
