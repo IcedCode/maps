@@ -1,7 +1,7 @@
 <map proto="1.4.2">
 <name>Abood</name>
 <version>1.0.3</version>
-<objective>Be the first team to 2500 points to win!</objective>
+<objective>Koth</objective>
 <authors>
     <author uuid="bd133f12-724a-4ca9-af7b-f808810aa835"/> <!--  Ref  -->
     <author uuid="2d372806-0e62-4e44-87f7-2394540f5203"/> <!-- Tkes -->
@@ -67,7 +67,7 @@
 <king>
     <hills required="false" capture-time="5s" points="1" time-multiplier="0" show-progress="true" neutral-state="true" decay="0" recovery="1" permanent="false" visual-materials="visual-materials-filter">
         <hill name="Top" id="top-point" captured="top" capture="top" progress="top"/>
-        <hill name="Cave" capture="cave" progress="cave" capture="middle"/>
+        <hill name="Cave" capture="cave" progress="cave" capture="cave"/>
         <hill name="middle" id="middle" captured="middle" capture="middle" progress="middle"/>
     </hills>
 </king>
