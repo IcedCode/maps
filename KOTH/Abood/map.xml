@@ -62,14 +62,14 @@
     <cuboid id="cave" min="-25.5,10,3.5" max="-19.5,12,-2.5"/>
     <!-- <cuboid id="cave-captured" min="-18,36,-34" max="-11,54,-21"/> -->
     <cuboid id="top" min="-25.5,23,3.5" max="-19.5,25,-2.5"/>
-    <cuboid id="middle" min="12.5,21,3.5" max="18.5,23,-2.5"/>
+    <cuboid id="fortress" min="12.5,22,3.5" max="18.5,24,-2.5"/>
     <apply block="never"/>
 </regions>
 <king>
     <hills required="false" capture-time="5s" points="1" time-multiplier="0" show-progress="true" neutral-state="true" decay="0" recovery="1" permanent="false" visual-materials="visual-materials-filter">
         <hill name="Top" id="top-point" captured="top" capture="top" progress="top"/>
         <hill name="Cave" id="cave-point" capture="cave" progress="cave" captured="cave"/>
-        <hill name="Fortress" id="fortress-point" captured="middle" capture="middle" progress="middle"/>
+        <hill name="Fortress" id="fortress-point" captured="fortress" capture="fortress" progress="fortress"/>
     </hills>
 </king>
 <score>
