@@ -37,12 +37,12 @@
     </default>
     <spawn team="blue" kit="spawn-kit">
         <region yaw="0">
-            <point>.5,46,-44.5</point>
+            <point>.5,20,-40.5</point>
         </region>
     </spawn>
     <spawn team="red" kit="spawn-kit">
         <region yaw="180">
-            <point>.5,46,47.5</point>
+            <point>.5,20,41.5</point>
         </region>
     </spawn>
 </spawns>
@@ -104,7 +104,7 @@
     <item material="golden apple"/>
     <item amount="10" material="arrow"/>
 </kill-reward>
-<respawn delay="1s" auto="true"/>
+<respawn delay="3s" auto="true"/>
 <hunger>
     <depletion>off</depletion>
 </hunger>
