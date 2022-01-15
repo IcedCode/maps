@@ -39,10 +39,14 @@
   <kit id="batsmen-kit" parent="parent-kit">
     <item slot="0" material="stick" name="`2`lCricket Bat">
       <enchantment level="6">knockback</enchantment> </item>
+      <game-mode>adventure</game-mode>
+
   </kit>
   <kit id="fielders-kit" parent="parent-kit">
     <item slot="0" unbreakable="true" material="bow">
     <enchantment level="10">sharpness</enchantment> </item>
+    <game-mode>adventure</game-mode>
+
 
   </kit>
   <kit id="ball-kit">
@@ -123,7 +127,6 @@
   <apply kit="ball-effects" region="ball-region"/>
   <apply kit="batsmen-effects" region="batsmen-region"/>
   <apply kit="death-kit" region="ball-death"/>
-  <apply block-break="only-tnt" region="wicket"/>
 </regions>
 <!--flags-->
 <score>
