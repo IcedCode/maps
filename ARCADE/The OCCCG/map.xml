@@ -113,7 +113,7 @@
   <complement id="ball-death">
       <everywhere/>
       <rectangle id="pitch" min="-2.5,16.5" max="3.5,-3.5"/>
-      <cuboid id="sky" min="-65.5,2.1,65.5" max="55.5,100,-46.5"/>
+      <cuboid id="sky" min="-65.5,2.5,65.5" max="55.5,100,-46.5"/>
   </complement>
 
   <cuboid id="batsmen-region" min="1.5,22,2.5" max="-0.5,23,0.5"/>
