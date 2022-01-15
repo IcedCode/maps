@@ -53,6 +53,7 @@
     <objective id="cave-point-filter">cave-point</objective>
     <objective id="fortress-point-filter">fortress-point</objective>
     <any id="visual-materials-filter">
+        <material>glowstone</material>
         <material>wool:0</material>
         <material>wool:11</material>
         <material>wool:14</material>
