@@ -52,9 +52,9 @@
   <!--Regional Kits-->
   <kit id="ball-effects">
     <effect amplifier="-4">health boost</effect>
-    <effect amplifier="10" duration="3">damage resistance</effect>
+    <effect amplifier="10" duration="5">damage resistance</effect>
     <effect duration="2.5">invisibility</effect>
-    <effect amplifier="50" duration="5">slow_digging</effect>
+    <effect amplifier="50" duration="1000">slow_digging</effect>
   </kit>
   <kit id="batsmen-effects">
     <effect amplifier="10" duration="2">damage resistance</effect>
@@ -68,6 +68,10 @@
        <effect duration="100" amplifier="255">wither</effect>
        <effect amplifier="-5">health boost</effect>
    </kit>
+   <kit id="ref-kit">
+      <game-mode>creative</game-mode>
+      <effect duration="1000">invisibility</effect>
+    </kit>
 </kits>
 
 <spawns>
@@ -91,6 +95,11 @@
             <cylinder base="0.5,31,19.5" height="0" radius="0.5"/>
         </region>
     </spawn>
+    <spawn team="referee" kit="ball-kit">
+        <region yaw="180">
+            <cylinder base="0.5,31,19.5" height="0" radius="0.5"/>
+        </region>
+    </spawn>
 </spawns>
 <filters>
   <material id="only-tnt">tnt</material>
@@ -104,6 +113,7 @@
   <complement id="ball-death">
       <everywhere/>
       <rectangle id="pitch" min="-2.5,16.5" max="3.5,-3.5"/>
+      <cuboid id="sky" min="-65.5,5,65.5" max="55.5,100,-46.5"/>
   </complement>
 
   <cuboid id="batsmen-region" min="1.5,22,2.5" max="-0.5,23,0.5"/>

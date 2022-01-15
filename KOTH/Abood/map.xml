@@ -1,7 +1,7 @@
 <map proto="1.4.2">
 <name>Abood</name>
 <version>1.0.3</version>
-<objective>Koth</objective>
+<objective>Be the first team to 2500 points to win!</objective>
 <authors>
     <author uuid="bd133f12-724a-4ca9-af7b-f808810aa835"/> <!--  Ref  -->
     <author uuid="2d372806-0e62-4e44-87f7-2394540f5203"/> <!-- Tkes -->
@@ -32,26 +32,25 @@
 <spawns>
     <default>
         <region yaw="90">
-            <cylinder base="33,34,0.5" radius="2" height="0"/>
+            <cylinder base="10,34,1.5" radius="2" height="0"/>
         </region>
     </default>
     <spawn team="blue" kit="spawn-kit">
         <region yaw="0">
-            <point>0.5,21,-40.5</point>
+            <point>.5,46,-44.5</point>
         </region>
     </spawn>
     <spawn team="red" kit="spawn-kit">
-        <region yaw="-180">
-            <point>0.5,21,41</point>
+        <region yaw="180">
+            <point>.5,46,47.5</point>
         </region>
     </spawn>
 </spawns>
 <filters>
     <team id="only-blue">blue</team>
     <team id="only-red">red</team>
-    <objective id="top-point-filter">top-point</objective>
-    <objective id="cave-point-filter">cave-point</objective>
-    <objective id="middle-point-filter">middle-point</objective>
+    <objective id="castle-point-filter">castle-point</objective>
+    <objective id="dungeon-point-filter">dungeon-point</objective>
     <any id="visual-materials-filter">
         <material>wool:0</material>
         <material>wool:11</material>
@@ -61,15 +60,15 @@
 <regions>
     <cuboid id="cave" min="-25.5,10,3.5" max="-19.5,12,-2.5"/>
     <!-- <cuboid id="cave-captured" min="-18,36,-34" max="-11,54,-21"/> -->
-    <cuboid id="top" min="-25.5,23,3.5" max="-19.5,25,-2.5"/>
-    <cuboid id="middle" min="12.5,21,3.5" max="18.5,23,-2.5"/>
+    <cuboid id="top" base="-25.5,23,3.5" max="-19.5,25,-2.5"/>
+    <cuboid id="middle" base="12.5,21,3.5" max="18.5,23,-2.5"/>
     <apply block="never"/>
 </regions>
 <king>
     <hills required="false" capture-time="5s" points="1" time-multiplier="0" show-progress="true" neutral-state="true" decay="0" recovery="1" permanent="false" visual-materials="visual-materials-filter">
         <hill name="Top" id="top-point" captured="top" capture="top" progress="top"/>
-        <hill name="Cave" id="cave-point" capture="cave" progress="cave" captured="cave"/>
-        <hill name="Middle" id="middle-point" captured="middle" capture="middle" progress="middle"/>
+        <hill name="Cave" capture="cave" progress="cave" capture="cave"/>
+        <hill name="middle" id="middle" captured="middle" capture="middle" progress="middle"/>
     </hills>
 </king>
 <score>
