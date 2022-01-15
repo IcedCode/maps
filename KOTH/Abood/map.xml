@@ -60,9 +60,9 @@
     </any>
 </filters>
 <regions>
-    <cuboid id="cave" min="-26,9,4" max="-20,12,-3"/>
-    <cuboid id="top" min="-26,22,4" max="-20,25,-3"/>
-    <cuboid id="fortress" min="12,19,4" max="18,22,-3"/>
+    <cuboid id="cave" min="-26,9,4" max="-19,12,-3"/>
+    <cuboid id="top" min="-26,22,4" max="-19,25,-3"/>
+    <cuboid id="fortress" min="12,19,4" max="17,22,-3"/>
     <apply block="never"/>
 </regions>
 <king>
