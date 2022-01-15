@@ -66,9 +66,9 @@
 </regions>
 <king>
     <hills required="false" capture-time="5s" points="1" time-multiplier="0" show-progress="true" neutral-state="true" decay="0" recovery="1" permanent="false" visual-materials="visual-materials-filter">
-        <hill name="Top" id="top-point" captured="top" capture="top" progress="top"/>
-        <hill name="Cave" id="cave-point" capture="cave" progress="cave" captured="cave"/>
-        <hill name="Fortress" id="fortress-point" captured="fortress" capture="fortress" progress="fortress"/>
+        <hill name="Top" id="top-point"  capture="top" progress="top"/>
+        <hill name="Cave" id="cave-point" capture="cave" progress="cave"/>
+        <hill name="Fortress" id="fortress-point" capture="fortress" progress="fortress"/>
     </hills>
 </king>
 <score>
