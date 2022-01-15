@@ -1,7 +1,7 @@
 <map proto="1.4.2">
 <name>Abood</name>
 <version>1.0.3</version>
-<objective>Be the first team to 2500 points to win!</objective>
+<objective>First team to 750 points win!</objective>
 <authors>
     <author uuid="bd133f12-724a-4ca9-af7b-f808810aa835"/> <!--  Ref  -->
     <author uuid="2d372806-0e62-4e44-87f7-2394540f5203"/> <!-- Tkes -->
@@ -32,7 +32,7 @@
 <spawns>
     <default>
         <region yaw="90">
-            <cylinder base="10,34,1.5" radius="2" height="0"/>
+            <cylinder base="32.5,34,0.5" radius="2" height="0"/>
         </region>
     </default>
     <spawn team="blue" kit="spawn-kit">
@@ -60,9 +60,8 @@
 </filters>
 <regions>
     <cuboid id="cave" min="-25.5,10,3.5" max="-19.5,12,-2.5"/>
-    <!-- <cuboid id="cave-captured" min="-18,36,-34" max="-11,54,-21"/> -->
     <cuboid id="top" min="-25.5,23,3.5" max="-19.5,25,-2.5"/>
-    <cuboid id="fortress" min="12.5,22,3.5" max="18.5,24,-2.5"/>
+    <cuboid id="fortress" min="12.5,20,3.5" max="18.5,22,-2.5"/>
     <apply block="never"/>
 </regions>
 <king>
