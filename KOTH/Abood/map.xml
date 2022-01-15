@@ -67,8 +67,8 @@
 <king>
     <hills required="false" capture-time="5s" points="1" time-multiplier="0" show-progress="true" neutral-state="true" decay="0" recovery="1" permanent="false" visual-materials="visual-materials-filter">
         <hill name="Top" id="top-point" captured="top" capture="top" progress="top"/>
-        <hill name="Cave" capture="cave" progress="cave" capture="cave"/>
-        <hill name="middle" id="middle" captured="middle" capture="middle" progress="middle"/>
+        <hill name="Cave" capture="cave" progress="cave" captured="cave"/>
+        <hill name="Fortress" id="middle" captured="middle" capture="middle" progress="middle"/>
     </hills>
 </king>
 <score>

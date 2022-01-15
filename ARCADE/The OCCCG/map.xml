@@ -52,7 +52,7 @@
   <!--Regional Kits-->
   <kit id="ball-effects">
     <effect amplifier="-4">health boost</effect>
-    <effect amplifier="10" duration="2">damage resistance</effect>
+    <effect amplifier="10" duration="3">damage resistance</effect>
     <effect duration="2.5">invisibility</effect>
     <effect amplifier="50" duration="1000">slow_digging</effect>
   </kit>
