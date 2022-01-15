@@ -49,8 +49,9 @@
 <filters>
     <team id="only-blue">blue</team>
     <team id="only-red">red</team>
-    <objective id="castle-point-filter">castle-point</objective>
-    <objective id="dungeon-point-filter">dungeon-point</objective>
+    <objective id="top-point-filter">top-point</objective>
+    <objective id="cave-point-filter">cave-point</objective>
+    <objective id="fortress-point-filter">fortress-point</objective>
     <any id="visual-materials-filter">
         <material>wool:0</material>
         <material>wool:11</material>
