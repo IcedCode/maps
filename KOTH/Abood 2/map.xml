@@ -1,5 +1,5 @@
 <map proto="1.4.2">
-<name>Abood</name>
+<name>Abood 2</name>
 <version>1.0.3</version>
 <objective>First team to 750 points win!</objective>
 <authors>
@@ -60,8 +60,8 @@
     </any>
 </filters>
 <regions>
-    <cuboid id="cave" min="-26,9,4" max="-19,12,-3"/>
-    <cuboid id="garden" min="-26,22,4" max="-19,25,-3"/>
+    <cuboid id="cave" min="-7,9,-1" max="-14,12,4"/>
+    <cuboid id="garden" min="-24,21,5" max="-16,24,-2"/>
     <cuboid id="fortress" min="12,19,4" max="19,22,-3"/>
     <apply block="never"/>
 </regions>
