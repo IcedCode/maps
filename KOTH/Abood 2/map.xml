@@ -49,7 +49,7 @@
 <filters>
     <team id="only-blue">blue</team>
     <team id="only-red">red</team>
-    <objective id="top-point-filter">top-point</objective>
+    <objective id="top-point-filter">garden-point</objective>
     <objective id="cave-point-filter">cave-point</objective>
     <objective id="fortress-point-filter">fortress-point</objective>
     <any id="visual-materials-filter">
