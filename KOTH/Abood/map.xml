@@ -15,19 +15,19 @@
 </teams>
 <kits>
     <kit id="spawn-kit">
-        <clear/>
-        <item slot="0" unbreakable="true" material="stone sword"/>
-        <item slot="1" unbreakable="true" material="bow"/>
-        <item slot="2" material="golden apple"/>
-        <item slot="8" amount="20" material="arrow"/>
-        <helmet unbreakable="true" team-color="true" material="leather helmet"/>
-        <chestplate unbreakable="true" team-color="true" material="leather chestplate"/>
-        <leggings unbreakable="true" material="chainmail leggings">
-            <enchantment level="2">projectile_protection</enchantment>
-        </leggings>
-        <boots unbreakable="true" material="iron boots"/>
-        <effect duration="4" amplifier="10">damage resistance</effect>
-    </kit>
+      <clear/>
+     <item slot="0" unbreakable="true" material="stone sword"/>
+     <item slot="1" unbreakable="true" material="bow"/>
+     <item slot="2" material="golden apple"/>
+     <item slot="8" amount="12" material="arrow"/>
+     <helmet unbreakable="true" team-color="true" material="leather helmet"/>
+     <chestplate unbreakable="true" team-color="true" material="leather chestplate"/>
+     <leggings unbreakable="true" material="chainmail leggings">
+         <enchantment level="4">projectile_protection</enchantment>
+     </leggings>
+     <boots unbreakable="true" material="iron boots"/>
+     <effect duration="3" amplifier="255">resistance</effect>
+ </kit>
 </kits>
 <spawns>
     <default>
@@ -47,26 +47,19 @@
     </spawn>
 </spawns>
 <filters>
-    <team id="only-blue">blue</team>
-    <team id="only-red">red</team>
-    <objective id="top-point-filter">garden-point</objective>
-    <objective id="cave-point-filter">cave-point</objective>
-    <objective id="fortress-point-filter">fortress-point</objective>
-    <any id="visual-materials-filter">
-        <material>glowstone</material>
-        <material>wool:0</material>
-        <material>wool:11</material>
-        <material>wool:14</material>
-    </any>
+  <deny id="deny-use">
+       <any>
+           <material>workbench</material>
+       </any>
+   </deny>
 </filters>
 <regions>
     <cuboid id="cave" min="-26,9,4" max="-19,12,-3"/>
     <cuboid id="garden" min="-26,22,4" max="-19,25,-3"/>
     <cuboid id="fortress" min="12,19,4" max="19,22,-3"/>
-    <apply block="never"/>
-</regions>
+    <apply use="deny-use" block="never"/></regions>
 <king>
-    <hills required="false" capture-time="5s" points="1" time-multiplier="0" show-progress="true" neutral-state="true" decay="0" recovery="1" permanent="false" visual-materials="visual-materials-filter">
+  <hills required="false" capture-time="5s" points="1" time-multiplier="0" show-progress="true" neutral-state="true" incremental="true" permanent="false">
         <hill name="Garden" id="garden-point"  capture="garden" progress="garden"/>
         <hill name="Cave" id="cave-point" capture="cave" progress="cave"/>
         <hill name="Fortress" id="fortress-point" capture="fortress" progress="fortress"/>
@@ -102,9 +95,9 @@
 </itemkeep>
 <kill-reward>
     <item material="golden apple"/>
-    <item amount="10" material="arrow"/>
+    <item amount="5" material="arrow"/>
 </kill-reward>
-<respawn delay="3s" auto="true"/>
+<respawn delay="4s" auto="true" blackout="true"/>
 <hunger>
     <depletion>off</depletion>
 </hunger>
