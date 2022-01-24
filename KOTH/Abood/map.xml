@@ -26,7 +26,7 @@
          <enchantment level="4">projectile_protection</enchantment>
      </leggings>
      <boots unbreakable="true" material="iron boots"/>
-     <effect duration="5" amplifier="255">resistance</effect>
+     <effect duration="3" amplifier="255">resistance</effect>
  </kit>
 </kits>
 <spawns>
@@ -98,7 +98,7 @@
     <item material="golden apple"/>
     <item amount="5" material="arrow"/>
 </kill-reward>
-<respawn delay="4s" auto="true" blackout="true"/>
+<respawn delay="3s" auto="true" blackout="true"/>
 <hunger>
     <depletion>off</depletion>
 </hunger>

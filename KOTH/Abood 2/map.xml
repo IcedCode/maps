@@ -52,15 +52,6 @@
            <material>note block</material>
        </any>
    </deny>
-    <objective id="top-point-filter">garden-point</objective>
-    <objective id="cave-point-filter">cave-point</objective>
-    <objective id="fortress-point-filter">fortress-point</objective>
-    <any id="visual-materials-filter">
-        <material>glowstone</material>
-        <material>wool:0</material>
-        <material>wool:11</material>
-        <material>wool:14</material>
-    </any>
 </filters>
 <regions>
     <cuboid id="cave" min="-7,9,-3" max="-14,12,4"/>
@@ -69,7 +60,7 @@
     <apply use="deny-use" block="never"/>
 </regions>
 <king>
-    <hills required="false" capture-time="5s" points="1" time-multiplier="0" show-progress="true" neutral-state="true" decay="0" recovery="1" permanent="false" visual-materials="visual-materials-filter">
+  <hills required="false" capture-time="5s" points="1" time-multiplier="0" show-progress="true" neutral-state="true" incremental="true" permanent="false">
         <hill name="Garden" id="garden-point"  capture="garden" progress="garden"/>
         <hill name="Cave" id="cave-point" capture="cave" progress="cave"/>
         <hill name="Fortress" id="fortress-point" capture="fortress" progress="fortress"/>
@@ -107,7 +98,7 @@
     <item material="golden apple"/>
     <item amount="5" material="arrow"/>
 </kill-reward>
-<respawn delay="4s" auto="true" blackout="true"/>
+<respawn delay="3s" auto="true" blackout="true"/>
 <hunger>
     <depletion>off</depletion>
 </hunger>
