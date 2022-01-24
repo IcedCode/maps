@@ -26,7 +26,7 @@
          <enchantment level="4">projectile_protection</enchantment>
      </leggings>
      <boots unbreakable="true" material="iron boots"/>
-     <effect duration="3" amplifier="255">resistance</effect>
+     <effect duration="5" amplifier="255">resistance</effect>
  </kit>
 </kits>
 <spawns>
