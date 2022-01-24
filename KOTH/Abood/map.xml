@@ -49,7 +49,7 @@
 <filters>
   <deny id="deny-use">
        <any>
-           <material>workbench</material>
+           <material>note block</material>
        </any>
    </deny>
 </filters>
@@ -57,7 +57,8 @@
     <cuboid id="cave" min="-26,9,4" max="-19,12,-3"/>
     <cuboid id="garden" min="-26,22,4" max="-19,25,-3"/>
     <cuboid id="fortress" min="12,19,4" max="19,22,-3"/>
-    <apply use="deny-use" block="never"/></regions>
+    <apply use="deny-use" block="never"/>
+  </regions>
 <king>
   <hills required="false" capture-time="5s" points="1" time-multiplier="0" show-progress="true" neutral-state="true" incremental="true" permanent="false">
         <hill name="Garden" id="garden-point"  capture="garden" progress="garden"/>
